@@ -1,7 +1,5 @@
-# Dockerfile
-FROM evolutionapi/evolutionapi:latest
+FROM atendai/evolution-api:v1.8.2
 
 EXPOSE 8080
 
-CMD ["evolutionapi"]
-
+CMD ["node", "./dist/src/main.js"]
